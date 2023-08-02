@@ -1,0 +1,70 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+{% load static %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    Publications
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+
+<div class="col-12 col-lg-12">
+  <div class="container">
+    <div class="col-12 col-lg-12 section-heading">
+		  <h1>Publication</h1>
+	  </div>
+    {% for publication in publications %}
+    <div class="row no-gutters">
+        
+        <div class="col-lg-4">
+            <img src="/media/{{ publication.img_file }}" style="max-width:100%; max-height: 60%;">
+        </div>
+        <div class="col-lg-8">
+            <div class="card-body">
+            <h5 class="card-title">{{ publication.title }}</h5>
+            <!-- <p class="card-text">Keywords: '{{ publication.img_file }}'</p> -->
+            <p class="card-text">Author: {{ publication.author }}</p>
+            <p class="card-text">Keywords: {{ publication.keywords }}</p>
+            <p class="card-text"><small class="text-muted">Published at {{publication.created.date}}</small></p>
+            <a href="{{ publication.journal_url }}" class="Link" style="color: #ff661a;">{{ publication.journal }}</a>
+            / <a href="{{ publication.website_url }}" class="Link" style="color: #ff661a;">Website</a>
+            / <a href="/media/{{ publication.paper_file }}" class="Link" style="color: #ff661a;">Paper</a>
+            </div>
+        </div>
+        
+    </div>
+    {% endfor %}
+  </div>
+</div>
+  {% endblock content %}
+<!-- {% for article in articles %}
+  <div class="col-lg-4">
+    <video autoplay muted loop playsinline webkit-playsinline class="pub-teaser-video">
+    <source src="..." type="video/mp4">
+    </video> 
+</div>
+<div class="col-lg-8">
+<div class="pb-title">
+    Accidental Light Probes
+</div>
+<div class="pb-authors">            
+        <span class="pub-authors ky">Hong-Xing Yu</span>,
+        <a href="https://github.com/samiragarwala">Samir Agarwala</a>,
+        <a href="https://scholar.google.com/citations?user=LQvi5XAAAAAJ&amp;hl=en">Charles Herrmann</a>,
+        <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+</div>
+<div class="pb-resources">
+    <a class="pb-venue" href="https://cvpr2023.thecvf.com/">CVPR 2023</a> 
+        / <a href="https://kovenyu.com/alp/">Website</a>
+    
+        / <a href="https://arxiv.org/abs/2301.05211">Paper</a>
+    
+        / <a href="https://youtu.be/QGZ6boIZXtU">Video</a>
+    
+        / <a href="https://github.com/KovenYu/ALP">Code</a>  
+</div>
+{% endfor %}
+</div>
+</div>    

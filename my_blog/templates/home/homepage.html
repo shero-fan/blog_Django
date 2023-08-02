@@ -1,0 +1,73 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+{% load static %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    Homepage
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+
+<!-- 定义放置文章标题的div容器 -->
+<div class="container">
+	<div class="col-12 col-lg-12 section-heading">
+		<h1>Home</h1>
+	</div>
+    <div class="row mt-2">
+    </div>
+</div>
+<div class="container">
+	<div class="row ">
+		<div class=" col-lg-5" style="text-align: center;">
+			<div id="profile">
+			<img src="/media/profile/fxr.jpg" style="max-width:50%; max-height: 40%;border-radius: 50%;">
+			<div class="portrait-title">
+				<h2 itemprop="name">Xiru Fan</h2>
+				<a>
+				<span>nancy.fan (at) sjtu (dot) edu (dot) cn</span>
+				</a>
+			</div>
+			<!-- <link itemprop="url" href="https://kovenyu.com/"> -->
+			<a href="https://www.researchgate.net/profile/Xiru-Fan">ResearchGate</a>
+			/<a href="https://github.com/shero-fan">GitHub</a>
+			</div>
+			<a href="/media/profile/fxr_cv.pdf" class="btn btn-dark" style="background-color: #ff661a; border-color:#ff661a">Download CV</a>
+		</div>
+		<div class="col-lg-7" style="align-self: center">
+			<p>I&rsquo;m a 3rd-year postgraduate student at Shanghai Jiao Tong University, advised by Prof. <a href="https://www.researchgate.net/profile/Dong-Wang-59">Dong Wang</a>.
+		I am interested in 3D printing and multiphysics modeling</p>
+		<!-- , in particular, physical scene understanding that aims to
+		recover 3D object entities and physical properties for downstream applications such as AR and robotics. -->
+		</div>
+	</div>
+</div>
+<div class="container">
+
+	<!-- Main component for a primary marketing message or call to action -->
+	<div class="jumbotron">
+	  <h1>Navbar example</h1>
+	  <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+	  <p>To see the difference between static and fixed top navbars, just scroll.</p>
+	  <p>
+		<!-- <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a> -->
+	  </p>
+	</div>
+
+  </div> <!-- /container -->
+
+{% endblock content %}
+<!-- <div class="card h-100">
+	标题
+	<h4 class="card-header bg-dark">{{ article.title }}</h4>
+	摘要
+	<div class="card-body">
+		<p class="card-text">{{ article.body|slice:'100' }}...</p>
+	</div>
+	注脚
+	<div class="card-footer">
+		<a href="#" class="btn btn-primary">阅读本文</a>
+		<a href="{% url 'article:article_detail' article.id %}" class="btn btn-primary">Read More</a>
+	</div>
+</div>

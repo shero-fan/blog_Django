@@ -1,0 +1,67 @@
+<!-- 定义导航栏 -->
+<nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top" style="background-color: #395e31;">
+<!-- <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top"> -->
+  <div class="container">
+
+    <!-- 导航栏商标 -->
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="color: #ff661a;">Shero's Blog</a>
+    </div>
+    <!-- <a class="navbar-brand" href="#">Shero's Blog</a> -->
+    <div>
+        <ul class="navbar-nav">
+          <!-- 条目 -->
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home:home_page' %}" style="color: #f2d3ad;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'publication:pb_list' %}" style="color: #f2d3ad;">Publications</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="{% url 'article:article_list' %}" style="color: #f2d3ad;">Blogs</a>
+          </li> -->
+        </ul>
+    </div>
+    <!-- 导航入口 -->
+
+  </div>
+</nav>
+
+
+<!--<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
