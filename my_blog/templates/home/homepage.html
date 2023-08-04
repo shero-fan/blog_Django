@@ -11,51 +11,64 @@
 {% block content %}
 
 <!-- 定义放置文章标题的div容器 -->
-<div class="container">
-	<div class="col-12 col-lg-12 section-heading">
-		<h1>Home</h1>
-	</div>
-    <div class="row mt-2">
-    </div>
-</div>
-<div class="container">
-	<div class="row ">
-		<div class=" col-lg-5" style="text-align: center;">
+
+<!-- <div class="container">
+	<div class="row mt-4">
+		<div class="col-12 section-heading">
+			<h1>Home</h1>
+		</div>
+	</div>	
+</div> -->
+<!-- body{ padding-top:100px;} -->
+<div class="container" style="padding-top: 140px; padding-bottom: 20px;">
+	<div class="row " >
+		<div class=" col-5" style="text-align: center;">
 			<div id="profile">
-			<img src="/media/profile/fxr.jpg" style="max-width:50%; max-height: 40%;border-radius: 50%;">
-			<div class="portrait-title">
-				<h2 itemprop="name">Xiru Fan</h2>
+			<img src="/media/profile/fxr_1.jpg" style="max-width:50%; max-height: 40%;border-radius: 50%;">
+			<div class="portrait-title" style="padding-top: 20px;">
+				<h2 itemprop="name" style="color: #395e31;">Xiru Fan</h2>
 				<a>
 				<span>nancy.fan (at) sjtu (dot) edu (dot) cn</span>
 				</a>
-			</div>
-			<!-- <link itemprop="url" href="https://kovenyu.com/"> -->
-			<a href="https://www.researchgate.net/profile/Xiru-Fan">ResearchGate</a>
-			/<a href="https://github.com/shero-fan">GitHub</a>
+			
+				<div class="container" style="padding-bottom: 15px;">
+						<!-- <link itemprop="url" href="https://kovenyu.com/"> -->
+					<a href="https://www.researchgate.net/profile/Xiru-Fan" style="color: #ff661a;">ResearchGate</a>
+					/ <a href="https://github.com/shero-fan" style="color: #ff661a;">GitHub</a>
+					
+				</div>
 			</div>
 			<a href="/media/profile/fxr_cv.pdf" class="btn btn-dark" style="background-color: #ff661a; border-color:#ff661a">Download CV</a>
+			</div>
 		</div>
-		<div class="col-lg-7" style="align-self: center">
-			<p>I&rsquo;m a 3rd-year postgraduate student at Shanghai Jiao Tong University, advised by Prof. <a href="https://www.researchgate.net/profile/Dong-Wang-59">Dong Wang</a>.
-		I am interested in 3D printing and multiphysics modeling</p>
+		<div class="col-7" style="align-self: center">
+			<div class="container" style="padding-bottom: 10px;padding-left: 0px;">
+				<h2 itemprop="welcome" style="color: #395e31;font-size: x-large;font-weight: 600;">Welcome!</h2>
+			</div>
+			<p>I&rsquo;m a 3rd-year postgraduate student at Shanghai Jiao Tong University, advised by Prof. <a href="https://www.researchgate.net/profile/Dong-Wang-59"  style="color: #ff661a;">Dong Wang</a>.
+		 </p>
+		 <p>I am interested in 3D printing, multiphysics modeling and topology optimization, in particular computational design tool that aims to optimize the geometry and mechanical 
+			properties of complex structures such as soft actuators and metamaterials.</p>
 		<!-- , in particular, physical scene understanding that aims to
 		recover 3D object entities and physical properties for downstream applications such as AR and robotics. -->
 		</div>
 	</div>
 </div>
-<div class="container">
 
-	<!-- Main component for a primary marketing message or call to action -->
+<!-- <div class="container" style="padding-top: 40px; padding-bottom: 20px;">
+
+	Main component for a primary marketing message or call to action
 	<div class="jumbotron">
 	  <h1>Navbar example</h1>
 	  <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
 	  <p>To see the difference between static and fixed top navbars, just scroll.</p>
 	  <p>
-		<!-- <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a> -->
+		<a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
 	  </p>
 	</div>
+</div> -->
+<!-- </div> /container -->
 
-  </div> <!-- /container -->
 
 {% endblock content %}
 <!-- <div class="card h-100">
