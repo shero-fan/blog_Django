@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+w7)b#b^zs=!o$c!nw!232zzy8+e16w(v_hxl!s9p@pbm)4s)b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.sherofan.com','47.115.229.138','*']
+ALLOWED_HOSTS = ['.sherofan.com','47.115.229.138','127.0.0.1']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 

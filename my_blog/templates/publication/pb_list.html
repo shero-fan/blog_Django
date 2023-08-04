@@ -12,14 +12,14 @@
 
 <div class="col-12 col-lg-12">
   <div class="container">
-    <div class="col-12 col-lg-12 section-heading">
+    <div class="col-12 col-lg-12 section-heading"  style="padding-top: 100px;padding-bottom: 30px;">
 		  <h1>Publication</h1>
 	  </div>
     {% for publication in publications %}
-    <div class="row no-gutters">
+    <div class="row no-gutters"  style="padding-top: 20px;">
         
         <div class="col-lg-4">
-            <img src="/media/{{ publication.img_file }}" style="max-width:100%; max-height: 60%;">
+            <img src="/media/{{ publication.img_file }}" style="max-width:80%; max-height: 60%;">
         </div>
         <div class="col-lg-8">
             <div class="card-body">
